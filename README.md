@@ -56,9 +56,39 @@ pip install -r requirements.txt
 
 ## Training <a name="training"></a>
 ### Transfer Learning with InceptionV3
+
+We utilized transfer learning with the InceptionV3 model, leveraging pre-trained weights on the ImageNet dataset. Below are the results from our training process.
+
+### Training and Validation Accuracy
+
 ![Accuracy][image1]
-![losses][image2]
-![CM Test][image3]
+
+The above plot shows the training and validation accuracy over 100 epochs. The model's training accuracy rapidly increases and stabilizes around 90%, while the validation accuracy follows a similar trend, indicating that the model generalizes well to unseen data.
+
+### Training and Validation Loss
+
+![Losses][image2]
+
+The plot displays the training and validation loss over 100 epochs. The training loss decreases steadily, and the validation loss follows a similar trend, with some fluctuations. These fluctuations might indicate the model is adjusting to the validation data, but the overall trend suggests that the model is learning effectively without significant overfitting.
+
+### Confusion Matrix
+
+![CM Validation][image3]
+
+The confusion matrix provides a detailed breakdown of the model's performance on the test set. The diagonal values represent correct classifications, while off-diagonal values indicate misclassifications. From the matrix, we observe that the model performs well on the majority of classes, with the highest misclassification occurring between specific classes.
+
+### Training Procedure
+
+The training procedure involved the following steps:
+
+1. **Pre-trained Model:** We used the InceptionV3 model pre-trained on ImageNet, excluding the top layers.
+2. **Custom Layers:** Added a global average pooling layer, a fully connected layer with 1024 neurons and ReLU activation, a dropout layer with a rate of 0.5, and a final softmax layer with 10 units.
+3. **Frozen Layers:** Initially, all layers of the InceptionV3 model were frozen to leverage the pre-learned features.
+4. **Fine-Tuning:** After the initial training, the top 2 inception blocks of InceptionV3 were unfrozen and fine-tuned with a lower learning rate.
+5. **Hyperparameters:** We used a learning rate of 0.0001 for the custom layers and 0.00001 for fine-tuning the pre-trained layers. The model was trained with a batch size of 32 over 100 epochs using the Adam optimizer.
+
+By following this procedure, we ensured that the model could effectively learn and adapt to our specific classification task while benefiting from the robust feature extraction capabilities of the pre-trained InceptionV3 model.
+
 
 ## Team Machine Learning
 
