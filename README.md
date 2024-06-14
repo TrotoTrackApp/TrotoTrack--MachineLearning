@@ -28,11 +28,24 @@
 
 ## Model Architecture <a name="model-architecture"></a>
 
-Describe the architecture of the model you are using. For example:
+Our model is a Convolutional Neural Network (CNN) designed for image classification. The architecture of the model is as follows:
 
-- **Type:** Convolutional Neural Network (CNN), Recurrent Neural Network (RNN), etc.
-- **Layers:** Describe the layers and their configurations
-- **Hyperparameters:** Learning rate, batch size, epochs, etc.
+- **Input Layer:** Accepts 224x224 RGB images.
+- **Conv Layer 1:** 32 filters of size 3x3, ReLU activation, followed by MaxPooling with pool size 2x2.
+- **Conv Layer 2:** 64 filters of size 3x3, ReLU activation, followed by MaxPooling with pool size 2x2.
+- **Conv Layer 3:** 128 filters of size 3x3, ReLU activation, followed by MaxPooling with pool size 2x2.
+- **Flatten Layer:** Flattens the 3D output to 1D.
+- **Fully Connected Layer 1:** 128 neurons, ReLU activation.
+- **Dropout Layer:** Dropout rate of 0.5 to prevent overfitting.
+- **Fully Connected Layer 2:** 64 neurons, ReLU activation.
+- **Output Layer:** Softmax activation with 3 units.
+
+### Hyperparameters
+
+- **Learning Rate:** 0.001
+- **Batch Size:** 32
+- **Epochs:** 100
+- **Optimizer:** Adam
 
 ## Installation <a name="installation"></a>
 
