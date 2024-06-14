@@ -28,22 +28,20 @@
 
 ## Model Architecture <a name="model-architecture"></a>
 
-Our model is a Convolutional Neural Network (CNN) designed for image classification. The architecture of the model is as follows:
-
-- **Input Layer:** Accepts 224x224 RGB images.
-- **Conv Layer 1:** 32 filters of size 3x3, ReLU activation, followed by MaxPooling with pool size 2x2.
-- **Conv Layer 2:** 64 filters of size 3x3, ReLU activation, followed by MaxPooling with pool size 2x2.
-- **Conv Layer 3:** 128 filters of size 3x3, ReLU activation, followed by MaxPooling with pool size 2x2.
+Our model is built on top of a pre-trained Convolutional Neural Network (CNN), specifically the InceptionV3 architecture, which is pre-trained on the ImageNet dataset. We have used the pre-trained layers for feature extraction and added custom layers for our specific classification task.
+- **Pre-trained Base Model:** InceptionV3 (excluding the top layers), initialized with weights from ImageNet.
+- **Input Layer:** Accepts 299x299 RGB images.
+- **Pre-Trained Layer:** All layers from the InceptionV3 base model (up to the last convolutional block).
+- **Conv Layer:** 16 filters of size 3x3, ReLU activation, followed by MaxPooling with pool size 2x2.
 - **Flatten Layer:** Flattens the 3D output to 1D.
-- **Fully Connected Layer 1:** 128 neurons, ReLU activation.
-- **Dropout Layer:** Dropout rate of 0.5 to prevent overfitting.
-- **Fully Connected Layer 2:** 64 neurons, ReLU activation.
+- **Fully Connected Layer:** 32 neurons, ReLU activation.
+- **Dropout Layer:** Dropout rate of 0.1 to prevent overfitting.
 - **Output Layer:** Softmax activation with 3 units.
 
 ### Hyperparameters
 
 - **Learning Rate:** 0.001
-- **Batch Size:** 32
+- **Batch Size:** 128
 - **Epochs:** 100
 - **Optimizer:** Adam
 
@@ -61,3 +59,11 @@ pip install -r requirements.txt
 ![Accuracy][image1]
 ![losses][image2]
 ![CM Test][image3]
+
+## Team Machine Learning
+
+| Name                           | University	                                         | 
+| :----------------------------- | :---------------------------------------------------| 
+|	Khibran Muhammad Akbar         | Universitas Telkom                                  |
+|	Steven Tulus Parulian Elluya Sitompul          | Universitas Udayana                                 |
+|	 I Gede Satyananda Gautama          | Universitas Udayana                                 |
