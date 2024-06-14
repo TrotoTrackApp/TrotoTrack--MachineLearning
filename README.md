@@ -90,7 +90,7 @@ The training procedure involved the following steps:
 By following this procedure, we ensured that the model could effectively learn and adapt to our specific classification task while benefiting from the robust feature extraction capabilities of the pre-trained InceptionV3 model.
 
 
-## Team Machine Learning
+## Machine Learning Team
 
 | Name                           | University	                                         | 
 | :----------------------------- | :---------------------------------------------------| 
