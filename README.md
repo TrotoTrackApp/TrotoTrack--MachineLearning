@@ -13,6 +13,7 @@
 - [Model Architecture](#model-architecture)
 - [Installation](#installation)
 - [Training](#training)
+- [Machine Learning Team](#machine-learning-team)
 
 ## Project Overview <a name="project-overview"></a>
 
@@ -90,7 +91,7 @@ The training procedure involved the following steps:
 By following this procedure, we ensured that the model could effectively learn and adapt to our specific classification task while benefiting from the robust feature extraction capabilities of the pre-trained InceptionV3 model.
 
 
-## Machine Learning Team
+## Machine Learning Team <a name="machine-learning-team"></a>
 
 | Name                           | University	                                         | 
 | :----------------------------- | :---------------------------------------------------| 
