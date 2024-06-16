@@ -6,21 +6,22 @@
 [image3]: ./Images/confusion-matrix-test.png "CM Validation"
 
 
+<p align="center">
+  <img src="https://github.com/TrotoTrackApp/TrotoTrack-API/blob/readme/utils/img/logo.png" alt="Nama Alternatif" style="transform: scale(10);"> 
+</p>
+
 ## Table of Contents
 
-- [Project Overview](#project-overview)
+- [Introduction](#introduction)
 - [Dataset](#dataset)
 - [Model Architecture](#model-architecture)
 - [Installation](#installation)
 - [Training](#training)
 - [Machine Learning Team](#machine-learning-team)
 
-## Project Overview <a name="project-overview"></a>
+## Introduction <a name="introduction"></a>
 
-<p align="justify"> The energy research institute “Enerdata” stated that Indonesia's energy sector emissions increased from 470 metric tons of carbon dioxide (MtCO2) in 2015 to 581 MtC02 in 2019. 80% of which is contributed by vehicle emissions as the number of vehicle users increases every year. </p>
-<p align="justify">People's reluctance to walk causes the increasing number of vehicle users in Indonesia. Based on Stanford University research, Indonesia has the lowest average steps per day at 3.513. One reason is due to the fact that sidewalks are in poor condition, making them difficult to access. The lack of report results in less attention by the government, therefore, decreasing maintenance. Lack of a platform, namely to effectively report location of sidewalk damages is the main reason reports are not prevalent. Manual reporting, which is still done today, delays the notification of sidewalk damage.</p>
-<p align="justify">TrotoTrack is an application designed to facilitate the public in reporting sidewalk damage. Equipped with a Machine Learning-based sidewalk damage detection system, and integrated with Google Maps to accurately display the damaged location. TrotoTrack facilitates sustainable urban development by fostering collaboration between citizens and authorities in enhancing pedestrian facilities.</p>
-
+<p align="justify">Trototrack is an innovative application designed to streamline and expedite the process of reporting sidewalk defects. It leverages advanced technologies to simplify the identification and monitoring of damaged sidewalks, ensuring a safer and more accessible environment for pedestrians. </p>
 
 ## Dataset <a name="dataset"></a>
 - **Source:** [Dataset Link](https://drive.google.com/drive/folders/1Sd9CN9NAJP24qQrr1IvDX86cCOcHUoxy?usp=sharing) ![DatasetSample][image0]
