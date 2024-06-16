@@ -23,6 +23,15 @@
 
 <p align="justify">Trototrack is an innovative application designed to streamline and expedite the process of reporting sidewalk defects. It leverages advanced technologies to simplify the identification and monitoring of damaged sidewalks, ensuring a safer and more accessible environment for pedestrians. </p>
 
+## Installation <a name="installation"></a>
+
+To install and set up this project, you can use the following code:
+
+```bash
+git clone https://github.com/TrotoTrackApp/TrotoTrack-Machine-Learning.git
+pip install -r requirements.txt
+```
+
 ## Dataset <a name="dataset"></a>
 - **Source:** [Dataset Link](https://drive.google.com/drive/folders/1Sd9CN9NAJP24qQrr1IvDX86cCOcHUoxy?usp=sharing) ![DatasetSample][image0]
 - **Description:** The model was trained with a dataset of 1,514 sidewalk images collected from Google Maps.
@@ -47,15 +56,6 @@
 - **Batch Size:** 128
 - **Epochs:** 100
 - **Optimizer:** Adam
-
-## Installation <a name="installation"></a>
-
-To install and set up this project, you can use the following code:
-
-```bash
-git clone https://github.com/TrotoTrackApp/TrotoTrack-Machine-Learning.git
-pip install -r requirements.txt
-```
 
 ## Training <a name="training"></a>
 ### Transfer Learning with InceptionV3
